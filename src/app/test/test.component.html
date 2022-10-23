@@ -1,0 +1,13 @@
+<form (ngSubmit)="myMethod()">
+  <label for="nome">One Way Bind</label>
+  <input name="nome" [ngModel]="pageName">
+  <button>TESTAR</button>
+</form>
+
+<form (ngSubmit)="myMethod()">
+  <label for="nome">Two Way Bind</label>
+  <input name="nome" [(ngModel)]="pageName">
+  <button>TESTAR</button>
+</form>
+
+<p>{{pageName}}</p>
